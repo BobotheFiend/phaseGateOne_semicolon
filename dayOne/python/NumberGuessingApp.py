@@ -22,13 +22,14 @@ while(count < session):
                 user_guess = int(input("Wrong Guess!\nThe number is Higher than that.. Guess Again\nGuess the number?... "))
                 if (user_guess == answer):
                     count+1
-                    correctGuess +=1
+                    correct_Guess +=1
 
             else:
                 if(user_guess > answer):
+                 user_guess = int(input("Wrong Guess!\nThe number is Lower than that.. Guess Again\nGuess the number?... "))
                     if(user_guess == answer):
                         count+=1
-                        correctGuess+=1
+                        correct_Guess+=1
        
     
 if (trial == 1):
