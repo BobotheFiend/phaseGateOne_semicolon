@@ -10,5 +10,5 @@ match(day):
     case 5: print("Friday")
     case 6: print("Saturday")
     case 7: print("Sunday")
-    _ : print("Invalid Day")
+#    _ : print("Invalid Day")
 
