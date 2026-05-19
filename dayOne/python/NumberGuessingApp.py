@@ -6,14 +6,13 @@ correct_Guess = 0
 #second_guess = 0
 trial = 1;
 while(count < session):
-    guess = random.randint(1,101)
+    guess = random.randint(1,100)
     answer = guess
     print(answer)
     print(f"---------------------------Guess {count}---------------------------\n\n")
     user_guess = int(input("Guess the number?... "))
 
     if (user_guess == answer):
-        count+=1
         correct_Guess +=1
     else:
         while((user_guess != answer) and (trial <= 5)):
@@ -26,12 +25,12 @@ while(count < session):
 
             else:
                 if(user_guess > answer):
-                 user_guess = int(input("Wrong Guess!\nThe number is Lower than that.. Guess Again\nGuess the number?... "))
+                    user_guess = int(input("Wrong Guess!\nThe number is Lower than that.. Guess Again\nGuess the number?... "))
                     if(user_guess == answer):
                         count+=1
                         correct_Guess+=1
        
-    
+    count+=1
 if (trial == 1):
     print("Lengendary")
 elif(trial == 2):

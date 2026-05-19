@@ -1,0 +1,6 @@
+node_moduels/
+
+*.class
+***.jar
+__pycache__/
+*.py[cod]
