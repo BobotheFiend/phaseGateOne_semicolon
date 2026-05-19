@@ -9,7 +9,7 @@ public class LevelFour{
 
     System.out.println(toFahrenheit(50));
 
-    System.out.println(primeChecker(3));
+    System.out.println(primeChecker(9));
 
     System.out.println(largest(33,55,4));
 
@@ -51,12 +51,12 @@ public class LevelFour{
     public static boolean primeChecker(int number){
 
         int count = 2;
-        for(;count < Math.sqrt(number); count++){
+        for(;count <= number/2; count++){
     
-            if(number % count == 0)
+            if(number % count == 0){
                 return false;
-            
-          }
+            }
+        }
         return true;
     }
 
