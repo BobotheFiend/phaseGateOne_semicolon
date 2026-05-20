@@ -18,7 +18,7 @@ class faceBook_like_system(TestCase):
     
         
         actual = faceBook_like_system.text_display(names)
-        expected = "no one likes this"
+        expected = "mmo likes this"
         self.assertEqual(actual, expected)
         actual = faceBook_like_system.text_display(names)
         expected = "no one likes this"
