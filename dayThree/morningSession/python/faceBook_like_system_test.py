@@ -8,4 +8,4 @@ class faceBook_like_system(TestCase):
         names = []
         actual = faceBook_like_system.text_display(names)
         expected = "no one likes this"
-        self.assertEqual = actual, expected
+        self.assertEqual(actual, expected)
