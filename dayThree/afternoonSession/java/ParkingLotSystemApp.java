@@ -44,7 +44,6 @@ public class ParkingLotSystemApp{
 
               if (!isCarParked) {
                System.out.println("No Space to Park..!");
-                break;
               }
                 break;
             
@@ -53,7 +52,7 @@ public class ParkingLotSystemApp{
                   if (parkinglot.length == 1){
                     
                 }
-
+                break;
             case 0: checkingParkingStatus = false; 
                     System.out.println("Exiting the Premisis");
                     break;
