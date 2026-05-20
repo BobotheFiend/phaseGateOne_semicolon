@@ -27,11 +27,11 @@ public class FaceBookLikeSystemTest{
 
 
     String expected = FaceBookLikeSystem.textDisplay(friend);
-    String actual = "x0_sad likes this                                          ";
+    String actual = "x0_sad likes this";
     assertEquals(actual, expected);
 
     String expecteds = FaceBookLikeSystem.textDisplay(friends);
-    String actuals = "NAmdi, and jrejge likes this";
+    String actuals = "NAmdi and jrejge likes this";
     assertEquals(actuals, expecteds);
 
     String expectedLittleFriends = FaceBookLikeSystem.textDisplay(littleFriends);
@@ -43,7 +43,7 @@ public class FaceBookLikeSystemTest{
     assertEquals(actualGoodFriends, expectedGoodFriends);
 
     String expectedGreatFriends = FaceBookLikeSystem.textDisplay(greatFriends);
-    String actualGreatFriends = "ieeff, ddfge and 4 others likes this";
+    String actualGreatFriends = "dess, xcedd and 4 others likes this";
     assertEquals(actualGreatFriends, expectedGreatFriends);
     }
 

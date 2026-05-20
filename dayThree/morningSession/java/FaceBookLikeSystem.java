@@ -9,8 +9,7 @@ public class FaceBookLikeSystem{
         }
         else if(nameLength == 1){
              String result = String.format("""
-             %s likes this
-                                        """
+             %s likes this"""
                                             ,names[0]);
             return result;
         }
@@ -22,15 +21,13 @@ public class FaceBookLikeSystem{
         }
         else if(nameLength == 3){
             String result = String.format("""
-             %s, %s and %s likes this                
-                                        """
+             %s, %s and %s likes this"""
                                             ,names[0],names[1],names[2]);
             return result;
         }
         else if(nameLength >= 4){
              String result = String.format("""
-             %s, %s and %d others likes this                
-                                        """
+             %s, %s and %d others likes this"""
                                             ,names[0],names[1], nameLength-2);
             return result;
         }
