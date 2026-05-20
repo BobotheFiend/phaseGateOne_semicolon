@@ -16,4 +16,4 @@ def text_display(names):
     elif(name_length >= 4):
         return (f"{names[0]}, {names[1]} and {names_length - 2} likes this}");
         }
-    return null;
+    return None;
