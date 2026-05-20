@@ -19,7 +19,7 @@ public class LevelFour{
 
     System.out.println(reverse(4321));
 
-//    System.out.println(evenChecker(3));
+    System.out.println(countingWords("nnamdi"));
 
 
     }
@@ -100,10 +100,14 @@ public class LevelFour{
         return extractorHolder;
     }
 
-//    public static String countingWords(String word){
-//        int count = 0;
-//        for(;count < word.length(); count++){
-//            word.wordCharAt
-//        }
-//    }
+    public static int countingWords(String word){
+        int wordCounter = 0;        
+        int count = 0;
+        for(;count < word.length(); count++){
+            char target = 'n';
+            if (word.charAt(count) == target)
+                wordCounter++;
+        }
+        return wordCounter;
+    }
 }
