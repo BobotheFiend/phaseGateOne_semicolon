@@ -48,10 +48,10 @@ public class ParkingLotSystemApp{
                 break;
             
             case 2: 
-                boolean isCarRemoved = false;
-                  if (parkinglot.length == 1){
-                    
-                }
+//                boolean isCarRemoved = false;
+//                  if (parkinglot.length == 1){
+//                    
+//                }
                 break;
             case 0: checkingParkingStatus = false; 
                     System.out.println("Exiting the Premisis");
