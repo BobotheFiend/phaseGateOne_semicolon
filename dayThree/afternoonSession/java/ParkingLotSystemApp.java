@@ -41,7 +41,7 @@ public class ParkingLotSystemApp{
                     break;
                     }
               }
-
+              System.out.print(java.util.Arrays.toString(parkinglot));
               if (!isCarParked) {
                System.out.println("No Space to Park..!");
               }

@@ -1,5 +1,5 @@
 public class FaceBookLikeSystem{
-  
+
     public static String textDisplay(String [] names){
         
         int nameLength = names.length;
