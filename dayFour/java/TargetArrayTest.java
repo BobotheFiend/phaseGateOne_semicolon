@@ -23,7 +23,7 @@ public class TargetArrayTest{
         int [] input = {1,2,5,7,6,8,9};
         int target = 12;
         int [] expected = TargetArray.numberToAdd(input,target);
-        int[] actual = {5,7,7,5,6,6};
+        int[] actual = {5,7};
 
         assertArrayEquals(actual,expected);
 
@@ -39,5 +39,14 @@ public class TargetArrayTest{
 
     }
 
+            @Test
+    public void thatTheTheElementsAreSeperatedByVowelsAndConsonants(){
+        String [] input = {"fly","bug","ant"};
+        String [][] expected = TargetArray.items(input);
+        String[][] actual = {{"bug","ant"},{"fly"}};
+
+        assertEquals(actual,expected);
+
+    }
 
 }

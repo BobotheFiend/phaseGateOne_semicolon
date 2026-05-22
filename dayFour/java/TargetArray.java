@@ -14,7 +14,7 @@ public class TargetArray{
                     int index;
 //                for(index = 0; index < counter; index++){
                     int count;
-                    for(count = 1; count < collections.length; count++){
+                    for(count = counter + 1; count < collections.length; count++){
 //                    collections[index] + collections[count];
                        index = counter;
                        if((collections[index] + collections[count]) == target){
@@ -65,15 +65,16 @@ public class TargetArray{
         ArrayList<Integer> output = new ArrayList<Integer> ();
         for(;count < collections.length; count++){
             int appear;
-            for(appear = 1; appear < count; appear++){
+            for(appear = 0; appear < highest; appear++){
 //                collections[count] = collections[appear];
-                if(collections[count] == collections[appear]){
+                if(collections[appear] == collections[count]){
                     break;
                 }
             }
-            if (appear > highest){
-            highest = appear;
-            output.add(collections[highest]);
+            if (appear == highest){
+//            highest = appear;
+            collections[highest++] = collections[count];
+            output.add(collections[count]);
             }
         }
         
@@ -81,21 +82,21 @@ public class TargetArray{
 
         int counter =0;
         for(;counter < collectionsOutput.length; counter++){
-
-            collectionsOutput[counter] = output.get(counter);       
+              collectionsOutput[counter] = output.get(counter);      
         }
             return collectionsOutput;
     }
 
-    public static String [] items(String [] animals){
+    public static String [][] items(String [] animals){
 
         ArrayList<String> vowelsList = new ArrayList<String> ();
         ArrayList<String> consonants = new ArrayList<String> ();
 
-        String [] vowels = {"a","e","i","o","u"};
-        for(int words : animals){
-            for(int letters : vowels){
-                if(words.contains(vowels).toLowerCase()){
+        String vowels = "aeiou";
+        for(String words : animals){
+            int letter;
+            for(letter = 0; letter < vowels.length(); letter++){
+                if(words.toLowerCase().contains(vowels) ==  vowels.charAt(letter)){
                     vowelsList.add(words);
                 }
                 else{
@@ -106,11 +107,13 @@ public class TargetArray{
            String [][] animalsOutput = new String [vowelsList.size()][consonants.size()];
             
             int count = 0;
-            for(;count < animalsOutput.length; count++){
-                for(int counter = 0; counter < animalsOutput.length;counter++){
-                    animalsOutput[count][counter] = vowelsList.get(count), consonants.get(count);                
+            for(;count < vowelsList.size(); count++){
+                String [][] animalsOutput = vowelsList.get(count);
+                for(int counter = 0; counter < consonants.size();counter++){
+                    animalsOutput[count][counter] = vowelsList.get(count) + consonants.get(count);                
                 } 
             }
+            return animalsOutput;
     }
 
 }
